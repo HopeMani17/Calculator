@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(#003f13, #286f2d);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    height: 80vh;
+    flex-wrap: wrap;
+    width: 90vw;
+    max-width: 34rem;
+    margin: auto;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #66e06f, #51b151, #29af37) 1;
+    padding: 0;
+  }
+  
+  #result {
+    height: 25%;
+    width: 100%;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #1d3f19, #1f4d1c, #849386) 1;
+    background: linear-gradient(to bottom, #1e211b, #090e09);
+    border-bottom: 4px solid black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  #operations {
+    height: 75%;
+    width: 100%;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #003349, #2f4f4f, #003349) 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  
+  .btn {
+    width: 25%;
+    height: 25%;
+    font-size: 1.6rem;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #73cb83, #30d936, #1b992d) 1;
+    background: linear-gradient(#131413, #101414);
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+  #answer {
+    position: relative;
+    left: -40px;
+    font-size: 8vh;
+    color: transparent;
+    text-shadow: 0 0 0 #d1d5d5, 0 0 2px rgb(212 237 237 / 34%);
+  }
+  @media only screen and (max-width: 760px) {
+    .container {
+      height: 30rem; /* Adjust height for smaller screens */
+      width: 90%; /* Adjust width to fit smaller screens */
+      max-width: 20rem; /* Limit maximum width */
+    }
+  
+    #result {
+      height: 6rem; /* Adjust height for smaller screens */
+      width: 100%; /* Full width */
+    }
+  
+    #operations {
+      height: 24rem; /* Adjust height for smaller screens */
+      width: 100%; /* Full width */
+    }
+  }
